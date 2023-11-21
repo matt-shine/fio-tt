@@ -1,4 +1,3 @@
-# FLK it over Technical test
 
 To run:
 
