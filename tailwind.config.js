@@ -7,4 +7,5 @@ export default {
   variants: {
     extend: {},
   },
+  darkMode: "class",
 };
