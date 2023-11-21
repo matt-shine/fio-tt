@@ -12,7 +12,7 @@
     bind:value
     type="tel"
     {disabled}
-    {name}
+    id={name}
     {pattern}
     required
     class="border rounded h-10 p-2"

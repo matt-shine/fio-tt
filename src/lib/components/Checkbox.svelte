@@ -5,6 +5,6 @@
 </script>
 
 <label>
-  <input type="checkbox" {name} bind:checked on:change />
+  <input type="checkbox" id={name} bind:checked on:change />
   {label}
 </label>

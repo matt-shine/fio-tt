@@ -21,10 +21,12 @@ export default function (): ApplicantStore {
   const newApplicant: Writable<Applicant> = writable({
     ...DEFAULT_NEW_APPLICANT,
   });
-  const submittable: Readable<boolean> = derived(applicants, ($applicants) => {
-    console.log("derived", $applicants);
-    return $applicants.length > 0 && $applicants.some((a) => a.primary);
-  });
+
+  const submittable: Readable<boolean> = derived(
+    applicants,
+    ($applicants) =>
+      $applicants.length > 0 && $applicants.some((a) => a.primary),
+  );
 
   const resetNewApplicant = () => {
     newApplicant.set({ ...DEFAULT_NEW_APPLICANT });

@@ -9,7 +9,7 @@
   <label for={name}>{label}</label>
   <input
     bind:value
-    {name}
+    id={name}
     {disabled}
     required
     type="text"

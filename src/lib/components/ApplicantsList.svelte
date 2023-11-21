@@ -41,13 +41,15 @@
   {#if !$applicants.length}
     <p class="italic">No applicants added</p>
   {/if}
-  {#each $applicants as applicant, i (applicant.email)}
-    <ApplicantForm
-      bind:applicant
-      on:primaryChange={({ detail }) => handlePrimaryChanged(i, detail)}
-      disableFields={true}
-    >
-      <DeleteApplicantButton on:click={() => handleDeleteApplicant(i)} />
-    </ApplicantForm>
-  {/each}
+  <div data-testid="applicants-list">
+    {#each $applicants as applicant, i (applicant.email)}
+      <ApplicantForm
+        bind:applicant
+        on:primaryChange={({ detail }) => handlePrimaryChanged(i, detail)}
+        disableFields={true}
+      >
+        <DeleteApplicantButton on:click={() => handleDeleteApplicant(i)} />
+      </ApplicantForm>
+    {/each}
+  </div>
 </article>

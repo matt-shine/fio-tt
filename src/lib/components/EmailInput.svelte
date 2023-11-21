@@ -11,7 +11,7 @@
     bind:value
     type="email"
     {disabled}
-    {name}
+    id={name}
     required
     class="border rounded h-10 p-2"
   />

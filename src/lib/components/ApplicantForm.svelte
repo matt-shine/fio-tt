@@ -46,7 +46,7 @@
     <TelInput
       bind:value={applicant.mobileNumber}
       name="mobileNumber"
-      label="Mobile name"
+      label="Mobile number"
       pattern="^04[0-9]&#123;8&#125;"
       disabled={disableFields}
     />
