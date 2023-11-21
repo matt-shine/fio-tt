@@ -32,4 +32,5 @@ For a production app, I'd prefer to:
 - Improve validation messages for form fields.
 - Added applicants aren't editable (outside of the 'primary applicant' checkbox) - this is to prevent clearing details from already added applicants. In reality I'd either handle that scenario properly (ensure the submission button is disabled and an appropriate error is displayed) or display added applicants in a card or something similar (i.e without inputs).
 - Improve feedback on why the submit button is disabled (maybe a tooltip)
+- Unit testing - I've added unit testing for the applicants store and Applicants.svelte (covering basic functionality). As I'm a bit time constrained I hope serves to demonstrate how I would approach unit testing such an application.
 - Minor, but I'm not super happy with the repository structure. Namely the `components` folder - I'd typically organize that better.
